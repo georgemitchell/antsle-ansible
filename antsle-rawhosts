@@ -1,2 +1,3 @@
 [raw]
 192.168.1.43 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=antsle
+192.168.1.44 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=antsle

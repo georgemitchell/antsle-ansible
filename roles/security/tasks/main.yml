@@ -3,8 +3,8 @@
 - include: perform_aptitude_dist_upgrade.yml
   when: perform_aptitude_dist_upgrade is defined and perform_aptitude_dist_upgrade
 
-#- include: create_non_root_sudo_user.yml
-#  when: server_user != "root"
+- include: create_non_root_sudo_user.yml
+  when: server_user != "root"
   
 - include: force_ssh_authentication.yml
   when: force_ssh_authentication is defined and force_ssh_authentication
