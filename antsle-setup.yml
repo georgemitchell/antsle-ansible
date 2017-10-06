@@ -1,0 +1,15 @@
+---
+- hosts: raw
+  gather_facts: false
+  
+  tasks:
+  - name: install python 2
+    raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+    
+- name: Initial setup of antsle images
+  hosts: raw
+  vars:
+    update_apt_cache: yes
+
+  roles:
+      - security

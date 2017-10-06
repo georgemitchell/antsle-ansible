@@ -1,0 +1,12 @@
+---
+
+# You can use the following Python script to adjust this value.
+# pip install passlib
+# python -c "from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())"
+server_user_password: dontleavethisinproduction
+server_user: ubuntu
+
+perform_aptitude_dist_upgrade: yes
+
+force_ssh_authentication: yes
+

@@ -1,0 +1,5 @@
+---
+user_public_keys:
+  - ~/.ssh/antsle.pub
+
+shell: "/bin/bash"
